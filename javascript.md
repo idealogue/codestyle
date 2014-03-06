@@ -31,7 +31,8 @@
   1. [Resources](#resources)
   1. [License](#license)
 
-## <a name='types'>Types</a>
+<a name='types'></a>
+## Types
 
   - **Primitives**: When you access a primitive type you work directly on its value
 
@@ -64,9 +65,8 @@
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-    **[[⬆]](#TOC)**
-
-## <a name='objects'>Objects</a>
+<a name='objects'></a>
+## Objects
 
   - Use the literal syntax for object creation.
 
@@ -112,9 +112,9 @@
       type: 'alien'
     };
     ```
-    **[[⬆]](#TOC)**
-
-## <a name='arrays'>Arrays</a>
+    
+<a name='arrays'></a>
+## Arrays
 
   - Use the literal syntax for array creation
 
@@ -164,10 +164,9 @@
     }
     ```
 
-    **[[⬆]](#TOC)**
 
-
-## <a name='strings'>Strings</a>
+<a name='strings'></a>
+## Strings
 
   - Use single quotes `''` for strings
 
@@ -254,10 +253,8 @@
     }
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='functions'>Functions</a>
+<a name='functions'></a>
+## Functions
 
   - Function expressions:
 
@@ -312,11 +309,9 @@
     }
     ```
 
-    **[[⬆]](#TOC)**
 
-
-
-## <a name='properties'>Properties</a>
+<a name='properties'></a>
+## Properties
 
   - Use dot notation when accessing properties.
 
@@ -348,10 +343,8 @@
     var isJedi = getProp('jedi');
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='variables'>Variables</a>
+<a name='variables'></a>
+## Variables
 
   - Always use `var` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
 
@@ -457,10 +450,9 @@
     }
     ```
 
-    **[[⬆]](#TOC)**
 
-
-## <a name='hoisting'>Hoisting</a>
+<a name='hoisting'></a>
+## Hoisting
 
   - Variable declarations get hoisted to the top of their scope, their assignment does not.
 
@@ -546,11 +538,10 @@
 
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting) by [Ben Cherry](http://www.adequatelygood.com/)
 
-    **[[⬆]](#TOC)**
 
 
-
-## <a name='conditionals'>Conditional Expressions & Equality</a>
+<a name='conditionals'></a>
+## Conditional Expressions & Equality
 
   - Use `===` and `!==` over `==` and `!=`.
   - Conditional expressions are evaluated using coercion with the `ToBoolean` method and always follow these simple rules:
@@ -595,10 +586,9 @@
 
   - For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll
 
-    **[[⬆]](#TOC)**
 
-
-## <a name='blocks'>Blocks</a>
+<a name='blocks'></a>
+## Blocks
 
   - Use braces with all multi-line blocks.
 
@@ -624,10 +614,8 @@
     }
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='comments'>Comments</a>
+<a name='comments'></a>
+## Comments
 
   - Use `/** ... */` for multiline comments. Include a description, specify types and values for all parameters and return values.
 
@@ -717,10 +705,8 @@
     }
   ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='whitespace'>Whitespace</a>
+<a name='whitespace'></a>
+## Whitespace
 
   - Use soft tabs set to 2 spaces
 
@@ -825,9 +811,8 @@
         .call(tron.led);
     ```
 
-    **[[⬆]](#TOC)**
-
-## <a name='commas'>Commas</a>
+<a name='commas'></a>
+## Commas
 
   - Leading commas: **Nope.**
 
@@ -887,10 +872,8 @@
     ];
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='semicolons'>Semicolons</a>
+<a name='semicolons'></a>
+## Semicolons
 
   - **Yup.**
 
@@ -914,10 +897,8 @@
     })();
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='type-coercion'>Type Casting & Coercion</a>
+<a name='type-coercion'></a>
+## Type Casting & Coercion
 
   - Perform type coercion at the beginning of the statement.
   - Strings:
@@ -990,10 +971,8 @@
     var hasAge = !!age;
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='naming-conventions'>Naming Conventions</a>
+<a name='naming-conventions'></a>
+## Naming Conventions
 
   - Avoid single letter names. Be descriptive with your naming.
 
@@ -1103,10 +1082,8 @@
     };
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='accessors'>Accessors</a>
+<a name='accessors'></a>
+## Accessors
 
   - Accessor functions for properties are not required
   - If you do make accessor functions use getVal() and setVal('hello')
@@ -1157,10 +1134,8 @@
     };
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='constructors'>Constructors</a>
+<a name='constructors'></a>
+## Constructors
 
   - Assign methods to the prototype object, instead of overwriting the prototype with a new object. Overwriting the prototype makes inheritance impossible: by resetting the prototype you'll overwrite the base!
 
@@ -1242,10 +1217,8 @@
     };
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='events'>Events</a>
+<a name='events'></a>
+## Events
 
   - When attaching data payloads to events (whether DOM events or something more proprietary like Backbone events), pass a hash instead of a raw value. This allows a subsequent contributor to add more data to the event payload without finding and updating every handler for the event. For example, instead of:
 
@@ -1273,10 +1246,8 @@
     });
     ```
 
-  **[[⬆]](#TOC)**
-
-
-## <a name='modules'>Modules</a>
+<a name='modules'></a>
+## Modules
 
   - The module should start with a `!`. This ensures that if a malformed module forgets to include a final semicolon there aren't errors in production when the scripts get concatenated. [Explanation](https://github.com/airbnb/javascript/issues/44#issuecomment-13063933)
   - The file should be named with camelCase, live in a folder with the same name, and match the name of the single export.
@@ -1304,10 +1275,8 @@
     }(this);
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='jquery'>jQuery</a>
+<a name='jquery'></a>
+## jQuery
 
   - Prefix jQuery object variables with a `$`.
 
@@ -1366,17 +1335,14 @@
     $sidebar.find('ul').hide();
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='es5'>ECMAScript 5 Compatibility</a>
+<a name='es5'></a>
+## ECMAScript 5 Compatibility
 
   - Refer to [Kangax](https://twitter.com/kangax/)'s ES5 [compatibility table](http://kangax.github.com/es5-compat-table/)
 
-  **[[⬆]](#TOC)**
 
-
-## <a name='testing'>Testing</a>
+<a name='testing'></a>
+## Testing
 
   - **Yup.**
 
@@ -1386,10 +1352,8 @@
     }
     ```
 
-    **[[⬆]](#TOC)**
-
-
-## <a name='performance'>Performance</a>
+<a name='performance'></a>
+## Performance
 
   - [On Layout & Web Performance](http://kellegous.com/j/2013/01/26/layout-performance/)
   - [String vs Array Concat](http://jsperf.com/string-vs-array-concat/2)
@@ -1400,10 +1364,8 @@
   - [Long String Concatenation](http://jsperf.com/ya-string-concat)
   - Loading...
 
-  **[[⬆]](#TOC)**
-
-
-## <a name='resources'>Resources</a>
+<a name='resources'></a>
+## Resources
 
 
 **Read This**
@@ -1459,9 +1421,8 @@
   - [Dustin Diaz](http://dustindiaz.com/)
   - [nettuts](http://net.tutsplus.com/?s=javascript)
 
-  **[[⬆]](#TOC)**
-
-## <a name='license'>License</a>
+<a name='license'></a>
+## License
 
 (The MIT License)
 
@@ -1486,6 +1447,4 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[[⬆]](#TOC)**
-
-# };
+# :}~
