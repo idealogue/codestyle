@@ -1,4 +1,5 @@
-# Javascript Styleguide - heavily influenced (pinched) from airbnb
+# Javascript Styleguide
+*Heavily influenced (pinched) from airbnb*
 
 
 ## <a name='TOC'>Table of Contents</a>
