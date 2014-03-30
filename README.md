@@ -1,7 +1,7 @@
-codestyle
+![codestyle logo](http://f.cl.ly/items/163Z0J0A2C2P2c1g0C3Z/logo.png)
 =========
 
-A styleguide for the various languages / systems we use at Idealogue
+A styleguide for the various languages & systems we use at Idealogue.
 
 Things to do:
 
