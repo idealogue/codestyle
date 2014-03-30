@@ -1,4 +1,4 @@
-![codestyle logo](http://cl.ly/image/171U3u1w270a)
+![codestyle logo](http://f.cl.ly/items/1y2x0N3s0P1M0Z3E330K/logo.png)
 =========
 
 A styleguide for the various languages / systems we use at Idealogue
