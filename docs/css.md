@@ -28,7 +28,7 @@ Comment style should be simple and consistent within a single code base.
 * Keep line-length to a sensible maximum, e.g., 80 columns.
 * Use "sentence case" comments and consistent text indentation.
 
-```css
+```scss
 // We pretty much just use sass inline comments.
 // No need for this stuff to turn up in the final css file.
 // You can use 'CMD + /' to comment multiple lines in sublime.
