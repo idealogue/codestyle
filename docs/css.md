@@ -133,7 +133,7 @@ If declarations are to be consistently ordered, it should be in accordance with 
 
 Long, comma-separated property values - such as collections of gradients or shadows - can be arranged across multiple lines in an effort to improve readability and produce more useful diffs. There are various formats that could be used; one example is shown below.
 
-```css
+```scss
 .selector {
   background-image:
     linear-gradient(#ffffff, #cccccc),
@@ -195,7 +195,7 @@ The following shows the simple folder structure and core files we'll use for our
 
 Basic strucure:
 
-```css
+```scss
 .class {}
 .class__sub-class {}
 .class__sub-class--modifier {}
@@ -203,20 +203,20 @@ Basic strucure:
 
 When you do a thing with css aka, build a widget, you're going to call it something. This is known as the parent class, or module, or widget name - whatever you want really.
 
-```css
+```scss
 .list { }
 ```
 
 When building out a class you're going to need to tie the children to the parent somehow, but we don't want to _physically_ nest all our classes so we create sub-classes like so:
 
-```css
+```scss
 .list__heading {}
 .list__item {}
 ```
 
 If we want to modify something slightly from it's base class we can use a modifier, this keeps it tightly coupled to the original class/subclass, but allows for variation.
 
-```css
+```scss
 .list__heading--large {
   @extend .list__heading;
   font-size: 30px;
@@ -225,7 +225,7 @@ If we want to modify something slightly from it's base class we can use a modifi
 
 If you need to nest more than one level deep of subclasses you're probably looking to either create a new class or use private classes (discussed below).
 
-```css
+```scss
 // don't do this…
 .class__sub-class__sub-sub-class__sub-class-of-a-subclass {}
 ```
@@ -251,7 +251,7 @@ For the same reasons, try not to do a combination of the following (especially w
 <div class="awesome_class"></div>
 ```
 
-```css
+```scss
 .awesome_class {
   @extend .some-class;
   @extend .layout_stuff; 
@@ -270,7 +270,7 @@ With that in mind we propose the following guidelines:
 - Refactor in to re-usable patterns _after the fact_
 - When you need to go deeper use nested "private" classes:
 
-```css
+```scss
 // private class example
 .list {}
 .list__item {
