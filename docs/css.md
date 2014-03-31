@@ -36,8 +36,7 @@ Comment style should be simple and consistent within a single code base.
 
 ### Format
 
-Use one selector per line & include a single space before the opening brace of a ruleset.
-
+Use one selector per line & include a single space before the opening brace of a ruleset:
 ```scss
 .selector-1,
 .selector-2,
@@ -46,38 +45,38 @@ Use one selector per line & include a single space before the opening brace of a
 }
 ```
 
-Include one property per line & use one level of indentation for each declaration. Include a single space after the colon of a property and always close with a semi-colon, even on the last property in a block.
 
+Include one property per line & use one level of indentation for each declaration. Include a single space after the colon of a property and always close with a semi-colon, even on the last property in a block:
 ```scss
 .selector {
   color: red; 
 }
 ```
 
-Use lowercase and long hex values, e.g., 
 
+Use lowercase and long hex values: 
 ```
 #aaaaaa
 ```
 
-Use single or double quotes consistently. Preference is for double quotes.
 
+Use single or double quotes consistently. Preference is for double quotes:
 ```scss
 .selector {
   content: "foo";
 }
 ```
 
-Use unitless values where possible.
 
+Use unitless values where possible:
 ```scss
 .selector {
   line-height: 1.5;
 }
 ```
 
-Include a space after each comma in comma-separated property or function values.
 
+Include a space after each comma in comma-separated property or function values:
 ```scss
 .selector {
   background: linear-gradient(#ffffff, rgba(0, 0, 0, 0.8));
@@ -85,8 +84,7 @@ Include a space after each comma in comma-separated property or function values.
 ```
 
 
-* Separate each ruleset by a blank line.
-
+Separate each ruleset by a blank line:
 ```scss
 .selector-a {
   // ...
@@ -97,8 +95,8 @@ Include a space after each comma in comma-separated property or function values.
 }
 ```
 
-If declarations are to be consistently ordered, it should be in accordance with a single, simple principle. **Cluster related properties (e.g. positioning and box-model) together.**
 
+If declarations are to be consistently ordered, it should be in accordance with a single, simple principle. **Cluster related properties (e.g. positioning and box-model) together**:
 ```scss
 .selector {
   /* Positioning */
@@ -127,6 +125,7 @@ If declarations are to be consistently ordered, it should be in accordance with 
   text-align: right;
 }
 ```
+
 
 ### Exceptions and slight deviations
 
