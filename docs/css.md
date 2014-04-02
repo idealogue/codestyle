@@ -201,20 +201,20 @@ Basic strucure:
 .class__sub-class--modifier {}
 ```
 
-When you do a thing with css aka, build a widget, you're going to call it something. This is known as the parent class, or module, or widget name - whatever you want really.
+When you build a thing with css (a widget) you're going to call it something. We define this as a molecule. In the following example "list" is the parent molecule:
 
 ```scss
 .list { }
 ```
 
-When building out a class you're going to need to tie the children to the parent somehow, but we don't want to _physically_ nest all our classes so we create sub-classes like so:
+When building out a molecule you're going to need to tie the children to the parent somehow, but we don't want to _physically_ nest all our classes so we create sub-classes like so:
 
 ```scss
 .list__heading {}
 .list__item {}
 ```
 
-If we want to modify something slightly from it's base class we can use a modifier, this keeps it tightly coupled to the original class/subclass, but allows for variation.
+If we want to modify something slightly from it's base class we can use a modifier, this keeps it tightly coupled to the original molecules/sub-classes, but allows for variation:
 
 ```scss
 .list__heading--large {
@@ -223,7 +223,7 @@ If we want to modify something slightly from it's base class we can use a modifi
 }
 ```
 
-If you need to nest more than one level deep of subclasses you're probably looking to either create a new class or use private classes (discussed below).
+If you need to nest more than one level deep of subclasses you're probably looking to either create a new molecule or use private classes (discussed below).
 
 ```scss
 // don't do this…
@@ -234,7 +234,7 @@ If you need to nest more than one level deep of subclasses you're probably looki
 <a name="molecules"></a>
 ## 4. Molecules
 
-What _are_ molecules? We just don't know. But here we'll try and explain as best we can the how we think about our css in relation to our html in relation to that thing on the screen someone's gonna click.
+What _are_ molecules? We just don't know. But here we'll try and explain as best we can the how we think about our css in relation to our html in relation to that thing on the screen someone's gonna click, tap, or ignore.
 
 First of all, this is awful:
 
