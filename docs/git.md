@@ -5,8 +5,12 @@
 - Limit the first line to 72 characters or less
 - Use the present tense ("Add feature" not "Added feature")
 - Use the imperative mood ("Move cursor to..." not "Moves cursor to...")
-- Use emojis cautiously as per Justin's advice...
-- Use emojis constantly as per jenbennings's advice.
+- Consider starting the commit message with an applicable emoji:
+  * :lipstick: when improving the format/structure of the code
+  * :racehorse: when improving performance
+  * :non-potable_water: when plugging memory leaks
+  * :memo: when writing docs
+  * :bulb: Check out the [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com) for more ideas.
 
 
 Example of a good commit message:
